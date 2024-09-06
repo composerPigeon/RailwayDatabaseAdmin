@@ -38,7 +38,7 @@ create user petr_cara identified by Cara304
 
 grant railcar_manager to petr_cara;
 
-craate user albrecht_novak identified by Novak33
+create user albrecht_novak identified by Novak33
     default tablespace railway_data
     quota unlimited on railway_data;
 

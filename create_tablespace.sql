@@ -1,6 +1,6 @@
 -- Create tablespace
 create tablespace railway_data
-    datafile '/opt/oracle/oradata/pdb_railway/railway_data.dbf'
+    datafile '/opt/oracle/oradata/XE/pdb_railway/railway_data.dbf'
     size 500M autoextend on next 100M maxsize unlimited
     logging
     extent management local
@@ -13,5 +13,4 @@ create user data_owner identified by Owner56
     quota unlimited on railway_data;
 
 -- Grant privilages to data owner
-grant connect, resources to data_owner;
-grant create table, create view, create procedure, create sequence, create index to data_owner;
+grant connect, resource to data_owner;
